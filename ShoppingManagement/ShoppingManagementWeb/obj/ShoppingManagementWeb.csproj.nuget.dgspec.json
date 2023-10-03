@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "B:\\SU23\\PRN211\\HN23_CPL_.NET_04\\ShoppingManagement\\ShoppingManagementWeb\\ShoppingManagementWeb.csproj": {}
+    "B:\\GitHub\\ShopManagement\\ShoppingManagement\\ShoppingManagementWeb\\ShoppingManagementWeb.csproj": {}
   },
   "projects": {
-    "B:\\SU23\\PRN211\\HN23_CPL_.NET_04\\ShoppingManagement\\ShoppingManagementWeb\\ShoppingManagementWeb.csproj": {
+    "B:\\GitHub\\ShopManagement\\ShoppingManagement\\ShoppingManagementWeb\\ShoppingManagementWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "B:\\SU23\\PRN211\\HN23_CPL_.NET_04\\ShoppingManagement\\ShoppingManagementWeb\\ShoppingManagementWeb.csproj",
+        "projectUniqueName": "B:\\GitHub\\ShopManagement\\ShoppingManagement\\ShoppingManagementWeb\\ShoppingManagementWeb.csproj",
         "projectName": "ShoppingManagementWeb",
-        "projectPath": "B:\\SU23\\PRN211\\HN23_CPL_.NET_04\\ShoppingManagement\\ShoppingManagementWeb\\ShoppingManagementWeb.csproj",
+        "projectPath": "B:\\GitHub\\ShopManagement\\ShoppingManagement\\ShoppingManagementWeb\\ShoppingManagementWeb.csproj",
         "packagesPath": "C:\\Users\\GangsterCao\\.nuget\\packages\\",
-        "outputPath": "B:\\SU23\\PRN211\\HN23_CPL_.NET_04\\ShoppingManagement\\ShoppingManagementWeb\\obj\\",
+        "outputPath": "B:\\GitHub\\ShopManagement\\ShoppingManagement\\ShoppingManagementWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\GangsterCao\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -49,6 +49,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.18, )"
+            },
+            "Microsoft.VisualStudio.Web.BrowserLink": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
