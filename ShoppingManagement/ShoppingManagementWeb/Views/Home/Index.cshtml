@@ -1,0 +1,23 @@
+﻿<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>List Price</th>
+        <th>Sale Price</th>
+        <th>Information</th>
+        <th>Category</th>
+    </tr>
+    @foreach(var s in @ViewBag.st)
+    {
+        <tr>
+            <th>@s.ProductId</th>
+            <th>@s.ProductName</th>
+            <th>@s.ProductQuantity</th>
+            <th>@s.ProductListPrice</th>
+            <th>@s.ProductSalePrice</th>
+            <th>@s.ProductInformation</th>
+            <th>@s.CateName</th>
+        </tr>
+    }
+</table>
