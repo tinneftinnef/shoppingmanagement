@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="~/css/styleLogin.css">
+
+    <title>ConfirmRegister</title>
+</head>
+<body>
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Xác thực tài khoản</span>
+                <form method="post" action="/Access/ConfirmRegister">
+                    <input type="hidden" name="OTP" value="@ViewBag.data">
+                    <input type="hidden" name="id" value="@ViewBag.id">
+                    <div class="input-field">
+                        <input type="password" name="passwordOTP" class="password" placeholder="Mã xác nhận" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="passwordOTPReCheck" class="password" placeholder="Nhập lại mã" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="input-field button">
+                        <input type="submit" value="Xác thực">
+                    </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">
+                        Chưa nhận được mã sao?
+                        <a href="#" class="text signup-link">Gửi lại mã</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/scriptLogin.js"></script>
+</body>
+</html>

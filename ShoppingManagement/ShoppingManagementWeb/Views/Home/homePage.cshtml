@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Granss</title>
+    <link rel="stylesheet" href="~/css/styleHomePage.css" />
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h2 class="logo"><a href="#">Granss</a></h2>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" id="hamburger-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                    <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </label>
+            <ul class="links">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Cửa Hàng</a></li>
+                <li><a href="#">Dịch Vụ</a></li>
+                <li><a href="#">Liên Hệ Với Tôi</a></li>
+            </ul>
+            <div class="buttons">
+                @if(Context.Session.GetString("username") != null){
+                    <a href="#" class="signin">@Context.Session.GetString("username")</a>
+                    <a href="@Url.Action("Logout","Access")" class="signup">Đăng xuất</a>
+                }
+                else
+                {
+                    <a href="Access/Login" class="signin">Đăng Nhập</a>
+                    <a href="#" class="signup">Đăng Ký</a>
+                }
+            </div>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div class="hero">
+            <h2>Cửa hàng điện thoại</h2>
+            <p>
+                @*Đây là một dự án cá nhân được bắt đầu từ ngày 3/10/2023 với đầy
+                nhiệt huyết và nỗ lực.*@
+                This is an personal project that have been started from 10/3/2023 with
+                lot of passion and hard working.
+            </p>
+            <div class="buttons">
+                <a href="#" class="join">Tham gia ngay</a>
+                <a href="#" class="learn">Tìm hiểu thêm về tôi</a>
+            </div>
+        </div>
+        <div class="img">
+            <img src="https://www.codingnepalweb.com/demos/create-responsive-website-html-css/hero-bg.png" alt="hero image" />
+        </div>
+    </section>
+</body>
+</html>

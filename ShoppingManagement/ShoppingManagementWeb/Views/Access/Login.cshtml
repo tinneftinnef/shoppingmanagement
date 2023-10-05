@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="~/css/styleLogin.css">
+
+    <title>Đăng Nhập</title>
+</head>
+<body>
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Đăng Nhập</span>
+                @if (ViewBag.alert != null)
+                {
+                    <h2 id="alertDiv" style="color: red">@ViewBag.alert</h2>
+                }
+                @if (ViewBag.alertEmail != null)
+                {
+                    <h2 id="alertEmailDiv" style="color: red">@ViewBag.alertEmail</h2>
+                }
+                @if (ViewBag.userAndEmail != null)
+                {
+                    <h2 id="userAndEmailDiv" style="color: red">@ViewBag.userAndEmail</h2>
+                }
+                @if (ViewBag.mess != null)
+                {
+                    <h2 id="mess" style="color: red">@ViewBag.mess</h2>
+                }
+                <form method="post" action="/Access/Login">
+                    <div class="input-field">
+                        <input type="text" name="username" placeholder="Tên người dùng" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" name="password" class="password" placeholder="Mật khẩu" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Ghi nhớ đăng nhập</label>
+                        </div>
+
+                        <a href="#" class="text">Không nhớ mật khẩu của mình?</a>
+                    </div>
+                    <div class="input-field button">
+                        <input type="submit" value="Đăng Nhập">
+                    </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">
+                        Chưa có tài khoản sao?
+                        <a href="#" class="text signup-link">Đăng ký tại đây</a>
+                    </span>
+                </div>
+            </div>
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Đăng Ký</span>
+                <form id="registrationForm" method="post" action="/Access/Register">
+                    <div class="input-field">
+                        <input type="text" name="registerFullName" placeholder="Tên đầy đủ" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="registerUsername" placeholder="Tên người dùng" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" name="registerEmail" placeholder="Email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="registerPassword" name="registerPassword" class="password" placeholder="Mật khẩu" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" id="registerPasswordReInput" name="registerPasswordReInput" class="password" placeholder="Điền lại mật khẩu" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="input-field button">
+                        <input type="submit" value="Đăng Ký">
+                    </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">
+                        Ồ, bạn đã có tài khoản rồi sao?
+                        <a href="#" class="text login-link">Đăng nhập ngay</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/scriptLogin.js"></script>
+    <script src="~/js/preventFormSubmit.js"></script>
+</body>
+</html>
