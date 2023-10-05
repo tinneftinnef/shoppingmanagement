@@ -40,16 +40,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[B:/GitHub/ShopManagement/ShoppingManagement/ShoppingManagementWeb/Views/Access/ConfirmRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXENvbmZpcm1SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[B:/GitHub/ShopManagement/ShoppingManagement/ShoppingManagementWeb/Views/Access/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjZXNzXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [B:/GitHub/ShopManagement/ShoppingManagement/ShoppingManagementWeb/Views/Home/homePage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxob21lUGFnZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[B:/GitHub/ShopManagement/ShoppingManagement/ShoppingManagementWeb/Views/Home/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[B:/GitHub/ShopManagement/ShoppingManagement/ShoppingManagementWeb/Views/Home/loginForm.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbkZvcm0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [B:/GitHub/ShopManagement/ShoppingManagement/ShoppingManagementWeb/Pages/Shared/_Layout.cshtml]

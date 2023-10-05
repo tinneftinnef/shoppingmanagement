@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "B:\\GitHub\\ShopManagement\\ShoppingManagement\\ShoppingManagementWeb\\wwwroot\\js\\preventFormSubmit.js",
+      "PackagePath": "staticwebassets\\js\\preventFormSubmit.js"
+    },
+    {
       "Id": "B:\\GitHub\\ShopManagement\\ShoppingManagement\\ShoppingManagementWeb\\wwwroot\\js\\scriptLogin.js",
       "PackagePath": "staticwebassets\\js\\scriptLogin.js"
     },

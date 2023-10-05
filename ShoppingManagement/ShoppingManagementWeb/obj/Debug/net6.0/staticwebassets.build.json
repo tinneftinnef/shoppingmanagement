@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pfyTRY1BQkHriUA0PRgzHW4ZIAvQxBHIPTpn0RkXLq4=",
+  "Hash": "TtKJuaQBO7ebSct3VbM+FZ/9AERadV8MSxAbMfyoN8k=",
   "Source": "ShoppingManagementWeb",
   "BasePath": "_content/ShoppingManagementWeb",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "B:\\GitHub\\ShopManagement\\ShoppingManagement\\ShoppingManagementWeb\\wwwroot\\js\\preventFormSubmit.js",
+      "SourceId": "ShoppingManagementWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "B:\\GitHub\\ShopManagement\\ShoppingManagement\\ShoppingManagementWeb\\wwwroot\\",
+      "BasePath": "_content/ShoppingManagementWeb",
+      "RelativePath": "js/preventFormSubmit.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\preventFormSubmit.js"
     },
     {
       "Identity": "B:\\GitHub\\ShopManagement\\ShoppingManagement\\ShoppingManagementWeb\\wwwroot\\js\\scriptLogin.js",

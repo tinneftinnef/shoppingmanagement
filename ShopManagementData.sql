@@ -59,6 +59,10 @@ ALTER TABLE
     "Registation" ADD CONSTRAINT "registation_user_id_foreign" FOREIGN KEY("user_id") REFERENCES "Users"("user_id");
 ALTER TABLE
     "Registation" ADD CONSTRAINT "registation_product_id_foreign" FOREIGN KEY("product_id") REFERENCES "Production"("product_id");
+ALTER TABLE
+	Users ADD CONSTRAINT "UC_Email" UNIQUE (email);
+ALTER TABLE
+	Users ADD CONSTRAINT "UC_username" UNIQUE (username);
 
 INSERT INTO Product_Categories (product_cate_id, cate_name)
 VALUES (1, 'Phone');

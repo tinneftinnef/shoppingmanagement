@@ -30,28 +30,5 @@ namespace ShoppingManagementWeb.Controllers
         {
             return View();
         }
-        [HttpPost]
-        public ActionResult Login(string username, string password)
-        {
-            ShoppingManagementContext con = new ShoppingManagementContext();
-            var st = con.Users.FirstOrDefault(u => u.Username == username);
-            if (st != null)
-            {
-                if (st.Password == password)
-                {
-                    ViewBag.sucess = "Login successful";
-                    HttpContext.Session.SetInt32("user", st.UserId);
-                }
-                else
-                {
-                    ViewBag.failure = "Login fail";
-                }
-            }
-            else
-            {
-                ViewBag.failure = username;
-            }
-            return View("Login");
-        }
     }
 }
